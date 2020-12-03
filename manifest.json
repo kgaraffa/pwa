@@ -27,8 +27,8 @@
           "sizes": "512x512",
           "type": "image/png"
         }],
-    "start_url": "/index.html",
-    "display": "minimal-ui",
+    "start_url": "./index.html",
+    "display": "standalone",
     "background_color": "white",
     "theme_color": "white"
   }
