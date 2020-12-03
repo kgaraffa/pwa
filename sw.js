@@ -1,4 +1,4 @@
-var cacheName = 'eva';
+var cacheName = 'eva-pwa';
 var filesToCache = [
   '/',
   '/index.html',
