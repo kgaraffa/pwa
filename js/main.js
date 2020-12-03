@@ -46,7 +46,7 @@ function startDictation() {
       }
       else {
         // document.getElementById('scroll').style.display = 'block';
-        document.getElementById('results').style.display = 'none';
+        // document.getElementById('results').style.display = 'none';
       }
     }, 300);
 
