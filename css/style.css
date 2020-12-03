@@ -1,0 +1,363 @@
+/* Ticket # 00-00-00 */
+* {
+    font-family: 'Lato', sans-serif;
+  }
+  a, a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+  body {
+    margin: 0;
+  }
+  .home {
+    background: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+  }
+  /* navigation */
+  
+  .nav {
+    margin: 0;
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-flow: wrap;
+    padding: 15px 5px 0;
+  }
+  .welcome-header{
+    font-weight: 300;
+    font-size: 2.5em;
+  }
+  .flex-large {
+    flex: 3;
+  }
+  .flex-small {
+    flex: 1;
+    font-size: 1.5em;
+    max-width: 20px;
+    margin: 0 10px;
+    font-weight: 300;
+    vertical-align: middle;
+  }
+  .nav .speech {
+    border: 0;
+    max-width:400px;
+    padding:0;
+    margin:0;
+    padding: 5px 10px;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+  }
+  
+  .nav .speech input::placeholder {
+    color: #000;
+  }
+  .nav .speech input {
+    border:0;
+    color: #000;
+    background: transparent;
+    vertical-align: middle;
+    font-size: 1.5em;
+    width: calc(100% - 46px);
+    display:inline-block;
+  }
+  .nav .speech svg {
+    font-size: 2em;
+    vertical-align: middle;
+    display:inline-block;
+  }
+  
+  /* home speech section */
+  
+  
+  
+  /* voice search */
+  #searching-icon {
+    display: inline-block;
+    background: none;
+    border: 0;
+  }
+  
+  .home-search .speech {
+    border: 0;
+    max-width:600px;
+    padding:225px 0;
+    margin:0 auto;
+  }
+  .home-search .speech input::placeholder {
+    color: #000;
+    font-weight: bold;
+  }
+  .home-search .speech input {
+    border:0;
+    color: #000;
+    background: transparent;
+    vertical-align: middle;
+    font-size: 2em;
+    width: calc(100% - 55px);
+    display:inline-block;
+  }
+  .home-search .speech svg {
+    font-size: 2.5em;
+    vertical-align: middle;
+    display:inline-block;
+  }
+  
+  /* home footer */
+  
+  .footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    
+  }
+  .home .footer {
+    background: transparent;
+  }
+  /* .results {
+    padding: 16px 10px;
+    float: left;
+    font-weight: bold;
+    font-size: .9em;
+  } */
+  .date {
+    font-size: 1.5em;
+    float: right;
+    padding: 10px;
+  }
+  
+  /* main search section */
+  
+  .main-search {
+    margin: 0 0 40px;
+  }
+  
+  .main-heading {
+    font-size: 2.25em;
+    margin: 40px 0;
+    padding: 0 5px;
+  }
+  
+  #silvercloud-logo, .sc-results-toolbar, .result-title-bar, .sc-proc-bread-container, .sc-stepview-steppers, .sc-percent-helpful {
+    display: none;
+  }
+  
+  .sc-procedure-tree .sc-stepview-steppers {
+    display: block;
+    text-align: center;
+  }
+  
+  a.sc-result-item {
+    border: 0;
+    color: #000;
+    padding: 10px;
+  }
+  
+  a.sc-result-item:hover {
+    background: none;
+    opacity: .7;
+  }
+  
+  .silvercloud-results-wrapper-item-title {
+    font-size: 1.25em;
+  }
+  
+  .sc-result-icon {
+    margin: 0 5px 0 0;
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid;
+  }
+  
+  .content-rating-form {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: auto;
+  }
+  
+  .fr-view hr {
+    display: none;
+  }
+  
+  .sc-result-icon svg {
+    max-width: 20px;
+    fill: #000;
+    max-height: 16px;
+  }
+  
+  sc-highlight {
+    background: none;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+  
+  .sc-step-list {
+    width: 300px;
+    border-right: 0;
+    font-size: .85em;
+    line-height: 1;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+  
+  .sc-stepview-title {
+    font-weight: bold;
+    font-size: 1.15em;
+  }
+  
+  .sc-step-in-view {
+    max-height: 100%;
+  }
+  
+  .sc-step-list > div:nth-child(1) {
+    position: absolute;
+    top: 102px;
+    background: #fff;
+    width: 100%;
+    font-size: 2.5em;
+  }
+  .sc-proc-base-link {
+    max-width: 100%;
+    border-bottom: 0;
+  }
+  
+  .step-inView-active {
+    background: none;
+  }
+  
+  .sc-proc-base-link a, .sc-proc-base-link a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .tree-node:hover, .sc-proc-base-link:hover {
+    background: none;
+  }
+  
+  .step-inView-active > div:nth-child(2) {
+    font-weight: bold;
+  }
+  
+  .content-rating-form button {
+    width: 100%;
+    padding: 5px;
+    line-height: 1;
+    max-width: 40px;
+    margin: 0 auto;
+  }
+  
+  .content-rating-title {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: .85em;
+  }
+  
+  .silvercloud-procedure > div:nth-child(2) {
+    border: 0 !important;
+  }
+  
+  .silvercloud-results-wrapper h1 {
+    background: transparent;
+    text-transform: uppercase;
+    padding: 0;
+  }
+  
+  .silvercloud-results-wrapper h2 {
+    font-size: 1.15em;
+    font-weight: bold;
+  }
+  
+  .sc-stepview-steppers button {
+    border: none;
+    border-radius: 4px;
+    background-color: blue;
+    color: #fff;
+    height: auto;
+    margin: 0 5px;
+    padding: 5px 8px;
+    max-width: 200px;
+    min-width: 0;
+    outline: none;
+  }
+  
+  .pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #eee;
+  }
+  
+  .pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    color: #000;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #eee;
+  }
+  
+  .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    background-color: #fff;
+    border-color: #eee;
+    font-weight: bold;
+  }
+  
+  .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 2;
+    color: #000;
+    font-weight: bold;
+    cursor: default;
+    background-color: #fff;
+    border-color: #eee;
+  }
+  
+  /* scroll for more */
+  
+  .scroll-for-more {
+    margin: 0 auto;
+    position: fixed;
+    bottom: 48px;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    background: #fff;
+    font-size: .85em;
+  }
+  
+  /* form */
+  .sc-custom-form-hook {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .sc-custom-form-hook .sc-toolbar {
+    background: transparent;
+    border: 0;
+    height: auto;
+    margin: 20px 0 0;
+  }
+  
+  .sc-custom-form-hook .sc-toolbar-heading {
+    font-size: 1.25em;
+    padding: 0;
+  }
+  
+  button.sc-form-return-button, .sc-form-group button {
+    border-radius: 0;
+    background: blue;
+    border: 0;
+  }
+  
+  .sc-form-group input[type="text"], .sc-form-group input[type="email"], .sc-form-group textarea {
+    width: 100%;
+  }

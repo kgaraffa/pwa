@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Eva</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="white"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />  
+    <link rel="apple-touch-icon" href="images/logo.png">   
+    <meta name="theme-color" content="white"/>  
+    <meta name="apple-mobile-web-app-capable" content="yes">  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+    <meta name="apple-mobile-web-app-title" content="Eva"> 
+    <meta name="msapplication-TileImage" content="images/logo.png">  
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://integration.silvercloudinc.com/css/silvercloud.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.silvercloudinc.com/fa-v5.5.0/js/all.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="nav">
+    <div class="flex-large">
+      <form id="labnol" method="get" action="results.html">
+        <div class="speech">
+          <input onkeyup="check()" type="text" name="q" id="transcript" placeholder="How can I help you?">
+          <button type="button" id="searching-icon"><i id="speech-icon" class="fas fa-microphone"></i></button>
+        </div>
+      </form>      </div>
+    <div class="flex-small">
+      <i class="fas fa-inbox"></i>
+    </div>
+    <div class="flex-small">
+      <i class="fas fa-user"></i>
+    </div>
+  </div>
+
+  <div class="main-search">
+    <div class="main-heading">Here are some options</div>
+    <div ng-jq class="silvercloud-results-wrapper" widget="5f760c327c2a600472f535a7" product="5db1b46d2acb22540d2b38a7"></div>
+  </div>
+  <!-- <div id="scroll" class="scroll-for-more">scroll for<br>more<br><i class="fas fa-arrow-down"></i></div> -->
+  <div class="footer">
+    <div class="results"><a id="results" href="results.html">Return To Results</a></div>
+    <div id="date" class="date"></div>
+  </div>
+  <script defer src="js/main.js"></script>
+  <script src="https://integration.silvercloudinc.com/js/silvercloudjs/silvercloud.js"></script>
+  <script>
+  var scc = { embed : "ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKemRXSWlPaUkxWVRRNE16WTJNemt4T1dOa05EWTFaVEk0WmpnME5ERWlMQ0pwWVhRaU9qRTJNRFF3TnpFMU1qTXNJbUYxWkNJNld5SnNiMk5oYkdodmMzUWlYWDAuVjRBX0Nia1F3WGd5ZHlTU0lkcjJIUlBOTVU4THJHLU14UjdBREtFeHJxZw==" }; window.scc = scc;</script>
+</body>
+</html>
