@@ -361,3 +361,115 @@
   .sc-form-group input[type="text"], .sc-form-group input[type="email"], .sc-form-group textarea {
     width: 100%;
   }
+
+  /* swiper */
+
+
+  .swiper-container {
+    width:100%;
+    margin: 15px auto 0;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+  }
+  .swiper-wrapper {
+    position:relative;
+    display:flex;
+    width: 100%;
+    height: calc(100vh - 150px);
+    box-sizing: content-box;
+  }
+ .swiper-slide {
+    background: #fff;
+    width: calc(50% - 30px);
+    padding: 20px 0;
+  }
+
+  .swiper-slide:nth-child(1n) {
+    width: calc(50% - 50px);
+  }
+
+swiper-slide{
+ flex-shrink: 0;
+ width: 100%;
+ position: relative;
+ transition-property: transform;
+}
+
+
+/*NAVIGATION*/
+.swiper-navigation{
+  position:relative;
+  top: 25px;     
+}
+.swiper-button-next, .swiper-button-prev {
+  left:auto;
+  height: 35px;
+  color: #000;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  display:none;
+}
+.swiper-button-next{
+  right: 10px;
+}
+.swiper-button-prev{
+  right:40px;
+}
+
+.swiper-slide .sc-embed-answer-title {
+  display: none;
+}
+
+.swiper-slide .sc-result-icon {
+  padding: 0;
+  border: none;
+}
+
+.swiper-slide .silvercloud-results-wrapper-item-title {
+  font-size: .9em;
+}
+
+.swiper-slide a.sc-result-item {
+  border: 1px solid #000;
+  margin: 10px 0;
+  border-radius: 30px;
+  color: #000;
+  padding: 15px;
+}
+
+.swiper-slide .sc-embed-answer-container h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 15px;
+}
+
+.swiper-slide .silvercloud-loading-toolbar, .swiper-slide .sc-results-toolbar {
+  height: auto;
+  background-color: #fff;
+  line-height: 50px;
+  border: 0;
+  display: block;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 0;
+  margin: 0 0 15px;
+  display: block;
+  line-height: 1;
+}
+
+.swiper-slide > div:nth-child(1) {
+  padding: 0 15px;
+}
+
+.swiper-slide .silvercloud-results-title {
+  padding: 0;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.sc-embed-answer-container {
+  padding: 0px;
+}

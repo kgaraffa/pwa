@@ -20,9 +20,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
   <script defer src="https://cdn.silvercloudinc.com/fa-v5.5.0/js/all.js"></script>
+  <script src="https://unpkg.com/swiper@6.3.5/swiper-bundle.min.js"></script>
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body>
+<body class="home">
   <div class="nav">
     <div class="flex-large">
       <form id="labnol" method="get" action="results.html">
@@ -38,19 +41,28 @@
       <i class="fas fa-user"></i>
     </div>
   </div>
-
-  <div class="main-search">
-    <div class="main-heading">Here are some options</div>
-    <div ng-jq class="silvercloud-results-wrapper" widget="5f760c327c2a600472f535a7" product="5db1b46d2acb22540d2b38a7"></div>
+  <div class="swiper-container swiper-jwp" id="jwp-slider">
+    <div class="swiper-wrapper">
+      <div style="visibility: hidden;" class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide"><div ng-jq class="silvercloud-embed-answer-wrapper" resultsurl="" answer="5fca412c24c0672f1e7982e5" product="5db1b46d2acb22540d2b38a7"></div>
+    </div>
+      <div class="swiper-slide"><div ng-jq class="silvercloud-top-content-wrapper" widget="5fca409824a36a358a115ee5" product="5db1b46d2acb22540d2b38a7"></div>
+    </div>
+      <div class="swiper-slide"><div ng-jq class="silvercloud-custom-content-wrapper" widget="5f5bbda77c2a605ec32e6edd" product="5db1b46d2acb22540d2b38a7"></div>
+    </div>
+    </div>
+    
   </div>
-  <!-- <div id="scroll" class="scroll-for-more">scroll for<br>more<br><i class="fas fa-arrow-down"></i></div> -->
-  <div class="footer">
-    <div class="results"><a id="results" href="results.html">Return To Results</a></div>
-    <div id="date" class="date"></div>
+  <div class="swiper-navigation">
+    <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+    <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
   </div>
-  <script defer src="js/main.js"></script>
-  <script src="https://integration.silvercloudinc.com/js/silvercloudjs/silvercloud.js"></script>
-  <script>
-  var scc = { embed : "ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKemRXSWlPaUkxWVRRNE16WTJNemt4T1dOa05EWTFaVEk0WmpnME5ERWlMQ0pwWVhRaU9qRTJNRGN3T1RBek56Z3NJbUYxWkNJNld5SnJaMkZ5WVdabVlTNW5hWFJvZFdJdWFXOGlMQ0pzYjJOaGJHaHZjM1FpWFgwLnBua2ZUSzI1Z1AtMXVFcE1fbzhVYnc3aVloNlVMSkFnaEhqaHhYdUVOLUk=" }; window.scc = scc;</script>
-</body>
+    <div class="footer">
+      <div id="date" class="date"></div>
+    </div>
+    <script defer src="js/main.js"></script>
+    <script src="https://integration.silvercloudinc.com/js/silvercloudjs/silvercloud.js"></script>
+    <script>
+    var scc = { embed : "ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKemRXSWlPaUkxWVRRNE16WTJNemt4T1dOa05EWTFaVEk0WmpnME5ERWlMQ0pwWVhRaU9qRTJNRGN3T1RBek56Z3NJbUYxWkNJNld5SnJaMkZ5WVdabVlTNW5hWFJvZFdJdWFXOGlMQ0pzYjJOaGJHaHZjM1FpWFgwLnBua2ZUSzI1Z1AtMXVFcE1fbzhVYnc3aVloNlVMSkFnaEhqaHhYdUVOLUk=" }; window.scc = scc;</script>
+  </body>
 </html>

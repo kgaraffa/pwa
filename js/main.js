@@ -7,6 +7,35 @@ window.onload = () => {
     }
   }
 
+    // scrolling cards
+
+    var swiper = new Swiper('.swiper-jwp', {
+      centeredSlides: false,
+      slidesPerView: '2',
+      longSwipesMs: 0,
+     loopPreventsSlide:false,
+      longSwipes: true,
+      longSwipesRatio: 0,
+      threshold: 0,
+      slideToClickedSlide:true,
+      speed: 900,
+      loop: true,
+      loopedSlides:100,
+      spaceBetween: 20,
+      keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+   },
+      grabCursor: true,
+  
+     
+      navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+       
+   });
+
   // voice input
 
 document.getElementById("searching-icon").addEventListener("click", startDictation);
@@ -103,3 +132,5 @@ function startDictation() {
       searchingIcon.addEventListener("click", startDictation);
     }
   }
+
+ 

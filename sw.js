@@ -2,6 +2,7 @@ var cacheName = 'eva-pwa';
 var filesToCache = [
   './',
   './index.html',
+  './index-2.html',
   './results.html',
   './submit.html',
   './css/style.css',
