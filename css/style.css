@@ -381,6 +381,7 @@
     box-sizing: content-box;
   }
  .swiper-slide {
+    overflow-y: scroll;
     background: #fff;
     width: calc(50% - 30px);
     padding: 20px 0;
@@ -436,7 +437,7 @@ swiper-slide{
   margin: 10px 0;
   border-radius: 30px;
   color: #000;
-  padding: 15px;
+  padding: 10px;
 }
 
 .swiper-slide .sc-embed-answer-container h3 {
