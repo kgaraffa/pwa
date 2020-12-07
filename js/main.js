@@ -64,39 +64,39 @@ function startDictation() {
 
     // hide scroll for more/ return to results if in answer item
 
-    setInterval (function() {
-      if (window.location.href.indexOf("procid") > -1) {
-        // document.getElementById('scroll').style.display = 'none';
-        document.getElementById('results').style.display = 'block';
-      }
-      else if (window.location.href.indexOf("answerid") > -1) {
-        // document.getElementById('scroll').style.display = 'none';
-        document.getElementById('results').style.display = 'block';
-      }
-      else {
-        // document.getElementById('scroll').style.display = 'block';
-        // document.getElementById('results').style.display = 'none';
-      }
-    }, 300);
+    // setInterval (function() {
+    //   if (window.location.href.indexOf("procid") > -1) {
+    //     document.getElementById('scroll').style.display = 'none';
+    //     document.getElementById('results').style.display = 'block';
+    //   }
+    //   else if (window.location.href.indexOf("answerid") > -1) {
+    //     document.getElementById('scroll').style.display = 'none';
+    //     document.getElementById('results').style.display = 'block';
+    //   }
+    //   else {
+    //     document.getElementById('scroll').style.display = 'block';
+    //     document.getElementById('results').style.display = 'none';
+    //   }
+    // }, 300);
 
     // append query to return to results
 
-    function updateSrc() {
-      search = window.location.href.split('?')[1];
-      addQuery = document.getElementById('silvercloudIframe').src + '?' +  search;
-      document.getElementById('silvercloudIframe').src = addQuery;
-    }
+    // function updateSrc() {
+    //   search = window.location.href.split('?')[1];
+    //   addQuery = document.getElementById('silvercloudIframe').src + '?' +  search;
+    //   document.getElementById('silvercloudIframe').src = addQuery;
+    // }
 
-    function searchVariable() {
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      const searchVar = urlParams.get('q');
-      if (window.location.href.indexOf("?q=") > -1) {
-        addQuery = document.getElementById('results').href + '?q=' +  searchVar;
-        document.getElementById('results').href = addQuery;
-      }
-    };
-    searchVariable();
+    // function searchVariable() {
+    //   const queryString = window.location.search;
+    //   const urlParams = new URLSearchParams(queryString);
+    //   const searchVar = urlParams.get('q');
+    //   if (window.location.href.indexOf("?q=") > -1) {
+    //     addQuery = document.getElementById('results').href + '?q=' +  searchVar;
+    //     document.getElementById('results').href = addQuery;
+    //   }
+    // };
+    // searchVariable();
 
   // date js
   function loadDate() {
