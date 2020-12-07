@@ -160,8 +160,9 @@
     color: #000;
     min-width: auto;
     position: absolute;
-    bottom: 45px;
+    bottom: 0;
     height: auto;
+    z-index: 1;
     line-height: 1;
   }
   
@@ -339,7 +340,7 @@
     border-color: #eee;
   }
 
-  .sc-config-fotter {
+  .sc-config-footer {
     padding: 10px;
   }
   
