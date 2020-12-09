@@ -147,6 +147,35 @@
     display: none;
   }
 
+  .silvercloud-acsearch-bar {
+    display: inline-block;
+    max-width: 535px;
+    width: 100%;
+  }
+
+  .nav .silvercloud-acsearch-bar {
+    display: inline-block;
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .sc-acsearch-hook button {
+    display: none;
+  }
+
+  .sc-autocomplete-items {
+    text-align: left;
+    width: auto;
+    padding: 0 10px 0 0;
+    color: #000;
+    min-width: 200px;
+    max-width: 350px;
+  }
+
+  .sc-autocomplete-items svg {
+    fill: #000;
+  }
+
   .result-title-bar {
     background: transparent;
     border: 0;
@@ -159,7 +188,7 @@
     background: #fff;
     color: #000;
     min-width: auto;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height: auto;
     z-index: 1;
@@ -304,6 +333,11 @@
     max-width: 200px;
     min-width: 0;
     outline: none;
+  }
+
+  .pagination {
+    position: relative;
+    z-index: 1;
   }
   
   .pagination > li > a, .pagination > li > span {

@@ -52,7 +52,7 @@ function startDictation() {
       recognition.start();
 
       recognition.onresult = function (e) {
-        document.getElementById('transcript').value = e.results[0][0].transcript;
+        document.getElementById('sc-search-input-5fd0d311d1a5b55e574d3171').value = e.results[0][0].transcript;
         recognition.stop();
         document.getElementById('labnol').submit();
       };
@@ -112,14 +112,15 @@ function startDictation() {
     var today = dayOfWeek + " " + curMonth + " " + dayOfMonth + ", " + curYear;
 
     document.getElementById('date').textContent = today;
+    if (document.getElementById('time-greeting') !== null ) {
     document.getElementById('time-greeting').textContent = curMeridiem;
-
+    }
   };loadDate();
 
   // change microphone to search icon
 
-  function check(){
-    var checkInput = document.getElementById("transcript");
+  setInterval (function check(){
+    var checkInput = document.getElementById("sc-search-input-5fd0d311d1a5b55e574d3171");
     var speechIcon = document.getElementById("speech-icon");
     var searchingIcon = document.getElementById("searching-icon");
     if (checkInput.value) {
@@ -131,6 +132,6 @@ function startDictation() {
       speechIcon.classList.add("fa-microphone");
       searchingIcon.addEventListener("click", startDictation);
     }
-  }
+  }, 1000);
 
  
