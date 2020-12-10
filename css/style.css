@@ -27,6 +27,9 @@
     flex-flow: wrap;
     padding: 15px 5px 0;
   }
+  .mobile-center {
+    display: flex;
+  }
   .welcome-header{
     font-weight: 300;
     font-size: 2.5em;
@@ -97,7 +100,7 @@
     background: transparent;
     vertical-align: middle;
     font-size: 2em;
-    width: calc(100% - 55px);
+    width: 100%;
     display:inline-block;
   }
   .home-search .speech svg {
@@ -149,7 +152,7 @@
 
   .silvercloud-acsearch-bar {
     display: inline-block;
-    max-width: 535px;
+    max-width: calc(100% - 50px);
     width: 100%;
   }
 
@@ -548,19 +551,20 @@ swiper-slide{
     display: block;
   }
   .nav .sc-acsearch-hook {
-    max-width: 300px;
+    max-width: 100%;
   }
-  .nav .speech {
+  .nav .speech, .home-search .speech {
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 260px;
   }
   .nav .silvercloud-acsearch-bar {
-    max-width: 255px;
+    max-width: calc(100% - 40px);
   }
-  .nav .speech input {
+  .nav .speech input, .home-search .speech input {
     font-size: 1em;
+    width: 100%;
   }
-  .nav .speech svg {
+  .nav .speech svg, .home-search .speech svg {
     font-size: 1.5em;
   }
   .flex-small {
@@ -619,5 +623,13 @@ swiper-slide{
   }
   .mobile-center{
     text-align: center;
+    display: block;
+    margin: 10px 0 0;
+  }
+  .flex-large {
+    text-align: center;
+  }
+  .sc-autocomplete-items {
+    max-width: 250px;
   }
 }
