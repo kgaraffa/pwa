@@ -565,7 +565,6 @@ swiper-slide{
   }
   .flex-small {
     display: inline-block;
-    margin: 0 auto;
   }
   .silvercloud-results-wrapper-item-details {
     font-size: .8em;
@@ -617,5 +616,8 @@ swiper-slide{
   }
   .sc-step-list > div:nth-child(1) {
     top: 114px;
+  }
+  .mobile-center{
+    text-align: center;
   }
 }
