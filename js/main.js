@@ -62,6 +62,12 @@ function startDictation() {
     }
   };
 
+    // append q to sc input 
+
+    setInterval (function addName() {
+      document.getElementById('sc-search-input-5fd0d311d1a5b55e574d3171').setAttribute("name", "q");
+    }, 1000);
+
     // hide scroll for more/ return to results if in answer item
 
     // setInterval (function() {
