@@ -438,7 +438,7 @@
     box-sizing: content-box;
   }
  .swiper-slide {
-    overflow-y: scroll;
+    overflow-y: auto;
     background: #fff;
     width: calc(50% - 30px);
     padding: 20px 0;
