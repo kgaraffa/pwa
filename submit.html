@@ -5,25 +5,107 @@
   <title>Eva</title>
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="white"/>
+  <link rel="icon" href="images/logo.png" type="image/x-icon" />  
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <link rel="icon" href="images/logo.png" type="image/x-icon" />  
     <link rel="apple-touch-icon" href="images/logo.png">   
-    <meta name="theme-color" content="white"/>  
-    <meta name="apple-mobile-web-app-capable" content="yes">  
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
-    <meta name="apple-mobile-web-app-title" content="Eva"> 
-    <meta name="msapplication-TileImage" content="images/logo.png">  
-    <meta name="msapplication-TileColor" content="#FFFFFF">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://integration.silvercloudinc.com/css/silvercloud.css" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
   <script defer src="https://cdn.silvercloudinc.com/fa-v5.5.0/js/all.js"></script>
+  <script src="https://unpkg.com/swiper@6.3.5/swiper-bundle.min.js"></script>
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<style>
+  #step2, #step2a, #step2b, #step3, #step4{
+  display: none;
+}
+
+.search-form textarea:focus, .search-form input:focus{
+    outline: none;
+}
+
+.search-form .step{
+  padding:150px 0;
+  max-width:800px; 
+  margin:0 auto;
+  text-align: center;
+  }
+
+
+#search-form{
+  min-height: 1000000px;
+}
+
+.search-form .step p {
+  color: #444;
+}
+
+.search-form input, .search-form input[type="text"], .search-form input[type="email"], .search-form textarea {
+  background: transparent;
+    font-size: 16px;
+  font-weight: 300;
+  color: #000;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 350px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+.search-form textarea{
+  border: 2px solid #ccc;
+  width: 300px;
+  margin-bottom: -13px;
+}
+
+.search-form input[type="button"], .search-form input[type="submit"] {
+    font-size: 16px;
+    font-weight: 400;
+    color: blue;
+    border: 2px solid blue;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: auto;
+    margin: 10px auto;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.search-form input[type="button"]:hover, .search-form .search-form input[type="submit"]:hover {
+    background-color: blue;
+    color: #f7f7f7;
+    transition: 0.25s ease all;
+    -moz-transition: 0.25s ease all;
+    -webkit-transition: 0.25s ease all;
+}
+
+.main-search {
+  max-height: 300px;
+  overflow: scroll;
+}
+
+.main-search::-webkit-scrollbar {
+  display: none;
+}
+.results-wrapper {
+  text-align: center;
+  padding: 150px;
+}
+</style>
 </head>
 <body>
   <div class="nav">
@@ -46,8 +128,31 @@
   </div>
 
   <div class="main-search">
-    <div ng-jq class="silvercloud-custom-form" form="5deab9f8eddb6403498627b1" product="5deab57d7c2a6053e937dc84"></div>
-  </div>
+    <form class="search-form" id="search-form">
+      <div id="step1" class="step">
+        <input id="input1" name="one" placeholder="What is your first name?" onkeydown="if (event.keyCode == 13){showStep(2)}">
+        <input type="button" value=" Next" onclick="showStep(2)">
+      </div>
+    
+      <div id="step2" class="step">
+        <input id="input2" name="two" placeholder="What is your last name?" onkeydown="if (event.keyCode == 13){showStep1(3)}">
+        <input type="button" value="Next" onclick="showStep1(3)">
+      </div>
+    
+      <div id="step3" class="step">
+        <input id="input3" name="three" placeholder="What is your email?" onkeydown="if (event.keyCode == 13){showStep2(4)}">
+        <input type="button" value="Next" onclick="showStep2(4)">
+      </div>
+
+      <div id="step4" class="step">
+        <input id="input4" name="four" placeholder="What is your question?">
+        <input type="submit" value="Submit">
+      </div>
+    
+    </form>
+    
+    <div id="results-wrapper"></div>
+    </div>  </div>
 
   <div class="footer">
     <div id="date" class="date"></div>
@@ -55,6 +160,135 @@
   <script defer src="js/main.js"></script>
   <script src="https://integration.silvercloudinc.com/js/silvercloudjs/silvercloud.js"></script>
   <script>
-  var scc = { embed : "ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKemRXSWlPaUkxWVRRNE16WTJNemt4T1dOa05EWTFaVEk0WmpnME5ERWlMQ0pwWVhRaU9qRTJNRGN3T1RBek56Z3NJbUYxWkNJNld5SnJaMkZ5WVdabVlTNW5hWFJvZFdJdWFXOGlMQ0pzYjJOaGJHaHZjM1FpWFgwLnBua2ZUSzI1Z1AtMXVFcE1fbzhVYnc3aVloNlVMSkFnaEhqaHhYdUVOLUk=" }; window.scc = scc;</script>
+  var scc = { embed : "ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKemRXSWlPaUkxWVRRNE16WTJNemt4T1dOa05EWTFaVEk0WmpnME5ERWlMQ0pwWVhRaU9qRTFPRGc1TmpFM01qWXNJbUYxWkNJNld5SnlZeTFzYVhSb2J5NXphV3gyWlhKamJHOTFaR2x1WXk1cGJ5SXNJbXh2WTJGc2FHOXpkQ0lzSW5CdmNuUmhiSE11YzJsc2RtVnlZMnh2ZFdScGJtTXVZMjl0SWwxOS53Zm1veU5GR18tSFhsN1VRLXJJMm1iZDludlh1dmlRYko5Tk5HVWtNRVRz" }; window.scc = scc;</script>
+  <script>
+
+function showStep(nr) {
+  document.getElementById("step2").style.display = "block";
+  stp = 400;
+  $('.main-search').animate({
+    scrollTop: stp + 'px'
+  }, 800);
+}
+
+function showStep1(nr) {
+  document.getElementById("step3").style.display = "block";
+  stp = 400;
+  $('.main-search').animate({
+    scrollTop: stp * 2 + 'px'
+  }, 800);
+}
+
+function showStep2(nr) {
+  document.getElementById("step4").style.display = "block";
+  stp = 400;
+  $('.main-search').animate({
+    scrollTop: stp * 3 + 'px'
+  }, 800);
+  console.log(stp);
+}
+
+// function stepOption(nr1, nr2) {
+//   document.getElementById("step" + nr1).style.display = "block";
+//   document.getElementById("step" + nr1).focus();
+//   document.getElementById("step" + nr2).style.display = "none";
+//   document.getElementById("step" + nr2).blur();
+//   $('html, body, .main-search').animate({
+//     scrollTop: $('#step' + nr1).position().top + 'px'
+//   }, 800);
+//   console.log($('#step' + nr1).position().top);
+// }
+
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+
+  </script>
+<script>
+(function() {
+  const clientToken = window.scc.embed;
+
+  activate();
+
+  function activate() {
+    // Add event listener for form submit
+    document
+      .getElementById("search-form")
+      .addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        document.getElementById("search-form").style.display = "none";
+        document.getElementById("results-wrapper").innerHTML =
+          "<p>Submitting data please wait.<p>";
+
+            var input1 = document.getElementById("input1").value;
+            var input2 = document.getElementById("input2").value;
+            var input3 = document.getElementById("input3").value;
+            var input4 = document.getElementById("input4").value;
+            if (document.getElementById("input4").value !== "") {
+        postQuery(
+          `https://rc-litho.silvercloudinc.io/api/v1/products/5deab57d7c2a6053e937dc84/forms/5deab9f8eddb6403498627b1/submit`,
+          {
+            inputs: [
+              {
+                field_id: "5f98440d7c2a6051d3f1033a",
+                input: input1
+              },
+              {
+                field_id: "5f98440d7c2a6051d3f1033b",
+                input: input2
+              },
+              {
+                field_id: "5f98440d7c2a6051d3f1033c",
+                input: input3
+              },
+              {
+                field_id: "5f98440d7c2a6051d3f1033d",
+                input: input4
+              }
+            ]
+          }
+        )
+          .then(function(data) {
+            console.log(JSON.stringify(data));
+            populateResults(data);
+          })
+          .catch(error => console.error(error));
+        }
+      });
+  }
+
+  function postQuery(url = ``, data = {}) {
+    // Default options are marked with *
+    return fetch(url, {
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      mode: "cors", // no-cors, cors, *same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "same-origin", // include, *same-origin, omit
+      headers: {
+        "Content-Type": "application/json",
+        //Accept: "application/json,text/plain,*/*;",
+        Accept: "application/json,text/plain,*/*;version=1", // -- USE THIS ACCEPT HEADER IF CONSUMING CURRENT LITHO APIS
+        Authorization: `Token ` + atob(clientToken)
+        // "Content-Type": "application/x-www-form-urlencoded",
+      },
+      redirect: "follow", // manual, *follow, error
+      referrer: "no-referrer", // no-referrer, *client
+      body: JSON.stringify(data) // body data type must match "Content-Type" header
+    }).then(response => response.json()); // parses response to JSON
+  }
+
+  function populateResults(data) {
+    var htmlString =
+      "<p>Thank you for the information! An agent will be in touch within 48 hours.<p>";
+    document.getElementById("results-wrapper").innerHTML = htmlString;
+  }
+})();
+</script>
 </body>
 </html>
