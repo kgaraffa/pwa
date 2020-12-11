@@ -456,7 +456,9 @@
     width: calc(50% - 30px);
     padding: 20px 0;
   }
-
+  .swiper-slide::-webkit-scrollbar {
+    display: none;
+  }
   .swiper-slide:nth-child(1n) {
     width: calc(50% - 50px);
   }
