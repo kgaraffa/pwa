@@ -130,22 +130,22 @@
   <div class="main-search">
     <form class="search-form" id="search-form">
       <div id="step1" class="step">
-        <input id="input1" name="one" placeholder="What is your first name?" onkeydown="if (event.keyCode == 13){showStep(2)}">
+        <input id="input1" name="one" autocomplete="off" placeholder="What is your first name?" onkeydown="if (event.keyCode == 13){showStep(2)}">
         <input type="button" value=" Next" onclick="showStep(2)">
       </div>
     
       <div id="step2" class="step">
-        <input id="input2" name="two" placeholder="What is your last name?" onkeydown="if (event.keyCode == 13){showStep1(3)}">
+        <input id="input2" name="two" autocomplete="off" placeholder="What is your last name?" onkeydown="if (event.keyCode == 13){showStep1(3)}">
         <input type="button" value="Next" onclick="showStep1(3)">
       </div>
     
       <div id="step3" class="step">
-        <input id="input3" name="three" placeholder="What is your email?" onkeydown="if (event.keyCode == 13){showStep2(4)}">
+        <input id="input3" name="three" autocomplete="off" placeholder="What is your email?" onkeydown="if (event.keyCode == 13){showStep2(4)}">
         <input type="button" value="Next" onclick="showStep2(4)">
       </div>
 
       <div id="step4" class="step">
-        <input id="input4" name="four" placeholder="What is your question?">
+        <input id="input4" name="four" autocomplete="off" placeholder="What is your question?">
         <input type="submit" value="Submit">
       </div>
     
@@ -165,27 +165,29 @@
 
 function showStep(nr) {
   document.getElementById("step2").style.display = "block";
+  document.getElementById("input2").focus();
   stp = 400;
   $('.main-search').animate({
     scrollTop: stp + 'px'
-  }, 800);
+  });
 }
 
 function showStep1(nr) {
   document.getElementById("step3").style.display = "block";
+  document.getElementById("input3").focus();
   stp = 400;
   $('.main-search').animate({
     scrollTop: stp * 2 + 'px'
-  }, 800);
+  });
 }
 
 function showStep2(nr) {
   document.getElementById("step4").style.display = "block";
+  document.getElementById("input4").focus();
   stp = 400;
   $('.main-search').animate({
     scrollTop: stp * 3 + 'px'
-  }, 800);
-  console.log(stp);
+  });
 }
 
 // function stepOption(nr1, nr2) {
